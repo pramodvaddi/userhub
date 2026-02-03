@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>UserHub</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,16 +11,16 @@
 <h2>Create User</h2>
 
 <form id="userForm">
-    <input type="text" id="name" placeholder="Name" required />
-    <input type="email" id="email" placeholder="Email" required />
-    <button type="submit">Create User</button>
+    <input id="name" placeholder="Name" required />
+    <input id="email" placeholder="Email" required />
+    <button type="submit">Create</button>
 </form>
 
 <p id="errorMessage"></p>
 
 <h2>Users</h2>
 
-<button onclick="loadUsers()">Load Users</button>
+<button type="button" onclick="loadUsers()">Load Users</button>
 
 <table>
     <thead>
@@ -31,10 +30,9 @@
         <th>Action</th>
     </tr>
     </thead>
-    <tbody id="userTableBody">
-    </tbody>
+    <tbody id="userTableBody"></tbody>
 </table>
 
-<script src="script.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
