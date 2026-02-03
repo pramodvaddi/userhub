@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>UserHub</h1>
+
+<h2>Create User</h2>
+
+<form id="userForm">
+    <input type="text" id="name" placeholder="Name" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <button type="submit">Create User</button>
+</form>
+
+<p id="errorMessage"></p>
+
+<h2>Users</h2>
+
+<button onclick="loadUsers()">Load Users</button>
+
+<table>
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="userTableBody">
+    </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
